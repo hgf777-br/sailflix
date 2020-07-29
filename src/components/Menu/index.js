@@ -1,8 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import Logo from '../../assets/img/Logo.png'
-import {LogoImage, MenuWrapper, ButtonLink} from './styles.js'
+import Logo from '../../assets/img/Logo.png';
+import {LogoImage, MenuWrapper} from './styles.js';
+import Button from '../Button';
 
 function Menu() {
     return (
@@ -11,9 +12,9 @@ function Menu() {
                 <LogoImage src={Logo} alt="Sailflix slogo"/>
             </Link>
 
-            <ButtonLink as={Link} to="/cadastro/Video">
+            <Button as={Link} to="/cadastro/Video">
                 novo vídeo
-            </ButtonLink>
+            </Button>
         </MenuWrapper>
     );
 }

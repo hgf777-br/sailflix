@@ -10,7 +10,7 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-export default function BannerMain({
+function BannerMain({
   videoTitle,
   videoDescription,
   url,
@@ -43,3 +43,5 @@ export default function BannerMain({
     </BannerMainContainer>
   );
 }
+
+export default BannerMain;

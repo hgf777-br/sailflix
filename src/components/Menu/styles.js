@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Button from '../Button';
 
 export const LogoImage = styled.img`
     max-width: 160px;
@@ -30,36 +29,4 @@ export const MenuWrapper = styled.nav`
       height: 40px;
       justify-content: center;
     }    
-`;
-
-export const ButtonLink = styled(Button)`
-    --corButton: #0055ff;
-    color: var(--corButton);
-    border: 1px solid var(--corButton);
-    box-sizing: border-box;
-    cursor: pointer;
-    padding: 16px 24px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    outline: none;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: opacity .3s;
-    &:hover,
-    &:focus {
-        opacity: .5;
-    } 
-    
-    @media (max-width: 800px) {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--corFundoMenu);
-      border-radius: 0;
-      border: 0;
-      text-align: center;
-    }
 `;

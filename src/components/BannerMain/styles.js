@@ -25,7 +25,7 @@ ContentAreaContainer.Item = styled.div`
 `;
 
 ContentAreaContainer.Category = styled.h1`
-  font-family: Roboto;
+  font-family: 'Recursive', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
@@ -68,7 +68,7 @@ ContentAreaContainer.Title = styled.h2`
 export const BannerMainContainer = styled.section`
   height: 80vh;
   position: relative;
-  color: #fff;
+  color: var(--white);
   background-image: ${({ backgroundImage }) => `url(${backgroundImage})`}; 
   background-size: cover;
   background-position: center;
@@ -101,24 +101,30 @@ export const BannerMainContainer = styled.section`
 `;
 
 export const WatchButton = styled.button`
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Recursive', sans-serif;
   box-sizing: border-box;
-  cursor: pointer;
   padding: 16px 24px;
   font-style: normal;
+  cursor:pointer;
   font-weight: bold;
   font-size: 16px;
   outline: none;
   border-radius: 5px;
   text-decoration: none;
-  display: inline-block;
+  display: none;
   border: 1px solid transparent;
-  color: var(--black);
-  background: var(--white);
-  border-color: var(--black);
+  color: var(--corButton);
+  background: var(--corFundoMenu);
+  border-color: var(--corButton);
   transition: opacity .3s;
   display: none;
   margin: 0 auto;
+  
+  &:hover,
+  &:focus {
+        opacity: .5;
+    }
+
   @media (max-width: 800px) {
     display: block;
   }
