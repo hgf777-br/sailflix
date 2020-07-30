@@ -5,12 +5,12 @@
       "link": "https://www.youtube.com/watch?v=RTNhnckYzbc",
       "cor": "#4477FF",
       "link_extra": {
-        "text": "Melhores regatas ao redor do mundo",
+        "text": "Domando a Tempestade",
         "url": "https://www.youtube.com/watch?v=RTNhnckYzbc"
       },
       "videos": [
         {
-          "titulo": "Melhores regatas ao redor do mundo",
+          "titulo": "Domando a Tempestade",
           "url": "https://www.youtube.com/watch?v=RTNhnckYzbc"
         },
         {
@@ -18,15 +18,15 @@
           "url": "https://www.youtube.com/watch?v=Iwztm1vAGL0"
         },
         {
-          "titulo": "The World Sailing Show - February 2018",
+          "titulo": "The World Sailing Show - Fevereiro 2018",
           "url": "https://www.youtube.com/watch?v=lj9DFRmCdnU"
         },
         {
-          "titulo": "Most Incredible drone shots from The Ocean Race!",
+          "titulo": "Melhores imagens com drone na Volvo Ocean Race",
           "url": "https://www.youtube.com/watch?v=h04_4Msuw2k"
         },
         {
-          "titulo": "Sailing the fabled 130ft J Class yacht Endeavour",
+          "titulo": "velejando o 'Endeavour' classe J de 130pés",
           "url": "https://www.youtube.com/watch?v=tgCMsSqfR1A"
         },
         {
@@ -34,68 +34,68 @@
           "url": "https://www.youtube.com/watch?v=zw205QV6Cg0"
         },
         {
-          "titulo": "Vendée Globe Southern Ocean HUGO BOSS",
+          "titulo": "Vendée Globe Southern Ocean",
           "url": "https://www.youtube.com/watch?v=GLobesQDSAU"
         },
         {
-          "titulo": "America's Cup Superyacht Regatta",
+          "titulo": "Regata America's Cup",
           "url": "https://www.youtube.com/watch?v=CtaUJzQnGWU"
         }        
       ]
     },
     {
-      "titulo": "Back End",
-      "cor": "#00C86F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      },
-      "videos": [
-        {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
-        },
-        {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-        },
-        {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-        },
-        {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
-        {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-        }
-      ]
-    },
-    {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Monocascos Modernos",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Para quem curte velejar com estilo",
+        "url": "https://www.youtube.com/watch?v=V77fZm4UqgU"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Halberg Rassy 40C",
+          "url": "https://www.youtube.com/watch?v=GaZ4Dnb_9wY&t=9s"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Oyster 675",
+          "url": "https://www.youtube.com/watch?v=0PUlZ9xeumc"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Jenneau 54",
+          "url": "https://www.youtube.com/watch?v=Yp9v_L74OYA"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Chrisco CNB 100",
+          "url": "https://www.youtube.com/watch?v=KGD4rHx_ak8&t=856s"
+        }
+      ]
+    },    
+    {
+      "titulo": "Catamarãs",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Lindos veleiros de 2 cascos",
+        "url": "https://www.youtube.com/watch?v=Zn1TnG5bjTU"
+      },
+      "videos": [
+        {
+          "titulo": "Nautitech 46",
+          "url": "https://www.youtube.com/watch?v=IznW8QDrdGc"
+        },
+        {
+          "titulo": "O Famoso Guina!",
+          "url": "https://www.youtube.com/watch?v=gJXqZARLxtE"
+        },
+        {
+          "titulo": "Leopard 48",
+          "url": "https://www.youtube.com/watch?v=fsyNReYRJ8I"
+        },
+        {
+          "titulo": "Lagoon 400",
+          "url": "https://www.youtube.com/watch?v=GHGGxcncH5U"
+        }, 
+        {
+          "titulo": "LAgoon 62",
+          "url": "https://www.youtube.com/watch?v=v9t_VFXwf7Y"
         }
       ]
     },
