@@ -1,6 +1,8 @@
 {
   "name": "sailflix",
   "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "http://graficainove.com.br/sailflix",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

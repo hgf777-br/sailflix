@@ -15,7 +15,7 @@ import CadastroCategoria from './pages/cadastro/Categoria';
 const Pagina404 = () => (<div>Página sem conteudo</div>);
 
 ReactDOM.render(
-  <Router>
+  <Router basename='/sailflix/'>
     <Switch>
       <Route path='/' component={Home} exact/>
       <Route path='/cadastro/Video' component={CadastroVideo}/>
