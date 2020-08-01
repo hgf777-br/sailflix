@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const Button = styled.button`
     color: var(--corButton);
     border: 1px solid var(--corButton);
+    background: var(--corFundoMenu);
     box-sizing: border-box;
     padding: 16px 24px;
     font-style: normal;
