@@ -1,54 +1,45 @@
 import styled from 'styled-components';
 
-export const Title = styled.h3`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 1;
-  margin-bottom: 16px;
-  display: inline-block;
-  padding: 20px;
-  background: red;
-  line-height: 1;
-  border-radius: 5px;
-
-  @media (max-width: 800px) {
-    font-size: 18px;
-    padding: 10px;
-  }
-`;
-
-export const ExtraLink = styled.a`
-  margin-left: 16px;
-  text-decoration: none;
-  transition: opacity .3s;
-  &:hover,
-  &:focus {
-    opacity: .5;
-  }
-  @media (max-width: 800px) {
-    display: block;
-    margin-bottom: 16px;
-    margin-left: 0;
-  }
-`;
-
 export const ListaCategorias = styled.ul`
   margin: 0;
   padding-left: 0;
-  padding-bottom: 32px;
+  padding: 10px 20px;
+  margin-bottom: 32px;
   list-style: none;
   display: flex;
   overflow-x: auto;
   flex-direction: row;
+  border-style: solid;
+  border-color: var(--primary);
   
   li {
     margin-right: 16px;
   }
 `;
 
-export const FormularioCategoria = styled.form`
-  color: white;
+export const LinhaButton = styled.div`
   display: flex;
-  margin-bottom: 16px;
+  width: 100%;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+`;
+
+export const CampoCor = styled.div`
+  width: 50%;
+  margin-right: 30px;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+`;
+
+export const CampoButton = styled.div`
+  padding-top: 2px;
+  @media (max-width: 800px) {
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;

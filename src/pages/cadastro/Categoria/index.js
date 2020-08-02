@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
+import { ListaCategorias, LinhaButton, CampoCor, CampoButton } from './styles';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -13,10 +15,9 @@ function CadastroCategoria() {
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
-    // chave: nome, descricao, bla, bli
     setValues({
       ...values,
-      [chave]: valor, // nome: 'valor'
+      [chave]: valor,
     });
   }
 
@@ -26,8 +27,6 @@ function CadastroCategoria() {
       infosDoEvento.target.value,
     );
   }
-
-  // ============
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
@@ -72,59 +71,45 @@ function CadastroCategoria() {
         />
 
         <FormField
-          label="Descrição:"
+          label="Descrição"
           type="????"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
         />
-        {/* <div>
-          <label>
-            Descrição:
-            <textarea
-              type="text"
-              value={values.descricao}
-              name="descricao"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
 
-        <FormField
-          label="Cor"
-          type="color"
-          name="cor"
-          value={values.cor}
-          onChange={handleChange}
-        />
-        {/* <div>
-          <label>
-            Cor:
-            <input
+        <LinhaButton>
+          <CampoCor>
+            <FormField
+              label="Cor"
               type="color"
-              value={values.cor}
               name="cor"
+              value={values.cor}
               onChange={handleChange}
             />
-          </label>
-        </div> */}
+          </CampoCor>
 
-        <button>
-          Cadastrar
-        </button>
+          <CampoButton>
+            <Button>
+              Cadastrar
+            </Button>
+
+            <Link to="/">
+              Ir para home
+            </Link>
+          </CampoButton>
+
+        </LinhaButton>
       </form>
 
-      <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria}${indice}`}>
+      <ListaCategorias>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.nome}`}>
             {categoria.titulo}
           </li>
         ))}
-      </ul>
+      </ListaCategorias>
 
-      <Link to="/">
-        Ir para home
-      </Link>
     </PageDefault>
   );
 }

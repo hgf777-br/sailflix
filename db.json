@@ -2,9 +2,152 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Regatas",
-      "descricao": "Domando a Tempestade",
-      "cor": "#cccccc"
+      "titulo": "Regatas",
+      "cor": "#4477FF",
+      "link_extra": {
+        "text": "Velejando com os melhores",
+        "url": "https://www.youtube.com/watch?v=RTNhnckYzbc"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Modernos",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Para quem curte velejar com estilo",
+        "url": "https://www.youtube.com/watch?v=V77fZm4UqgU"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Catamarãs",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "beleza e conforto em 2 cascos",
+        "url": "https://www.youtube.com/watch?v=Zn1TnG5bjTU"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Domando a Tempestade",
+      "url": "https://www.youtube.com/watch?v=RTNhnckYzbc"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Volvo Ocean Race 2014-15",
+      "url": "https://www.youtube.com/watch?v=Iwztm1vAGL0"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "The World Sailing Show - Fevereiro 2018",
+      "url": "https://www.youtube.com/watch?v=lj9DFRmCdnU"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Melhores imagens com drone na Volvo Ocean Race",
+      "url": "https://www.youtube.com/watch?v=h04_4Msuw2k"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "velejando o 'Endeavour' classe J de 130pés",
+      "url": "https://www.youtube.com/watch?v=tgCMsSqfR1A"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Rolex Middle Sea Race 2017",
+      "url": "https://www.youtube.com/watch?v=zw205QV6Cg0"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Vendée Globe Southern Ocean",
+      "url": "https://www.youtube.com/watch?v=GLobesQDSAU"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Regata America's Cup",
+      "url": "https://www.youtube.com/watch?v=CtaUJzQnGWU"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Halberg Rassy 40C",
+      "url": "https://www.youtube.com/watch?v=GaZ4Dnb_9wY&t=9s"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "Oyster 675",
+      "url": "https://www.youtube.com/watch?v=0PUlZ9xeumc"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Jenneau 54",
+      "url": "https://www.youtube.com/watch?v=Yp9v_L74OYA"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Chrisco CNB 100",
+      "url": "https://www.youtube.com/watch?v=KGD4rHx_ak8&t=856s"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
+      "titulo": "Nautitech 46",
+      "url": "https://www.youtube.com/watch?v=IznW8QDrdGc"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "O Famoso Guina!",
+      "url": "https://www.youtube.com/watch?v=gJXqZARLxtE"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "Leopard 48",
+      "url": "https://www.youtube.com/watch?v=fsyNReYRJ8I"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "Lagoon 400",
+      "url": "https://www.youtube.com/watch?v=GHGGxcncH5U"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "Lagoon 62",
+      "url": "https://www.youtube.com/watch?v=v9t_VFXwf7Y"
+    },
+    {
+      "titulo": "Nacra 17 - Olimpiadas do Rio",
+      "url": "https://www.youtube.com/watch?v=4emdfoTvNKk",
+      "categoriaId": 1,
+      "id": 18
+    },
+    {
+      "titulo": "Amel 54 - Sonho Pessoal",
+      "url": "https://www.youtube.com/watch?v=ZGu4eajorU0",
+      "categoriaId": 2,
+      "id": 19
+    },
+    {
+      "titulo": "Sirius 35 DS",
+      "url": "https://www.youtube.com/watch?v=OJNFmRGnMV4",
+      "categoriaId": 2,
+      "id": 20
     }
   ]
 }
