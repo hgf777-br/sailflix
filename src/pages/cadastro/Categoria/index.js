@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
-import { ListaCategorias, LinhaButton, CampoCor, CampoButton } from './styles';
+import categoriasRepository from '../../../repositories/categorias';
 
-function CadastroCategoria() {
+import {
+  ListaCategorias, LinhaButton, CampoCor, CampoButton,
+} from './styles';
+
+function CadastroCategoria(props) {
+  const novaCategoria = props.location.state.categoria;
+  const history = useHistory();
   const valoresIniciais = {
-    nome: '',
+    nome: novaCategoria,
     descricao: '',
     cor: '',
   };
@@ -29,35 +35,33 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:3080/categorias';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
+    categoriasRepository
+      .getAll()
+      .then(async (categoriasFromServer) => {
+        setCategorias(categoriasFromServer);
+      });
   }, []);
 
   return (
     <PageDefault>
       <h1>
-        Cadastro de Categoria:
-        {values.nome}
+        Cadastro de Categoria
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
         if (values.nome && values.descricao) {
-          setCategorias([
-            ...categorias,
-            values,
-          ]);
-          setValues(valoresIniciais);
+          categoriasRepository.create({
+            titulo: values.nome,
+            cor: values.cor,
+            link_extra: {
+              text: values.descricao,
+              url: '',
+            },
+          })
+            .then(() => {
+              history.push('/');
+            });
         }
       }}
       >
@@ -72,7 +76,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Descrição"
-          type="????"
+          type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
@@ -93,10 +97,11 @@ function CadastroCategoria() {
             <Button>
               Cadastrar
             </Button>
-
-            <Link to="/">
-              Ir para home
-            </Link>
+          </CampoButton>
+          <CampoButton>
+            <Button as={Link} to="/">
+              Home
+            </Button>
           </CampoButton>
 
         </LinhaButton>
@@ -104,7 +109,7 @@ function CadastroCategoria() {
 
       <ListaCategorias>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
+          <li key={`${categoria.titulo}`}>
             {categoria.titulo}
           </li>
         ))}

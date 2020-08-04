@@ -26,6 +26,15 @@
         "text": "beleza e conforto em 2 cascos",
         "url": "https://www.youtube.com/watch?v=Zn1TnG5bjTU"
       }
+    },
+    {
+      "titulo": "Aventuras",
+      "cor": "#990000",
+      "link_extra": {
+        "text": "Viagens incríveis!",
+        "url": ""
+      },
+      "id": 4
     }
   ],
   "videos": [
@@ -148,6 +157,18 @@
       "url": "https://www.youtube.com/watch?v=OJNFmRGnMV4",
       "categoriaId": 2,
       "id": 20
+    },
+    {
+      "titulo": "Como é velejar até a Antártida? | #SAL #123",
+      "url": "https://www.youtube.com/watch?v=Diurxp4oMtc",
+      "categoriaId": 4,
+      "id": 21
+    },
+    {
+      "titulo": "Cruzando o Cabo Horn (1929)",
+      "url": "https://www.youtube.com/watch?v=9tuTKhqWZso",
+      "categoriaId": 4,
+      "id": 22
     }
   ]
 }

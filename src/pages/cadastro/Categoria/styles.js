@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ListaCategorias = styled.ul`
   margin: 0;
-  padding-left: 0;
   padding: 10px 20px;
   margin-bottom: 32px;
   list-style: none;
@@ -19,27 +18,16 @@ export const ListaCategorias = styled.ul`
 
 export const LinhaButton = styled.div`
   display: flex;
+  height: 57px;
   width: 100%;
-
-  @media (max-width: 800px) {
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
+  margin-bottom: 30px;
 `;
 
 export const CampoCor = styled.div`
-  width: 50%;
+  width: 30%;
   margin-right: 30px;
-  @media (max-width: 800px) {
-    width: 100%;
-  }
 `;
 
 export const CampoButton = styled.div`
-  padding-top: 2px;
-  @media (max-width: 800px) {
-    padding-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-right: 30px;
 `;

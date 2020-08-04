@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const VideoCardContainer = styled.a`
   border: 2px solid;
-  border-radius: 4px;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
@@ -23,6 +22,7 @@ export const VideoCardContainer = styled.a`
   &:hover,
   &:focus {
     opacity: .5;
+    transform: scale(1.1);
   }
   
   &:not(:first-child) {

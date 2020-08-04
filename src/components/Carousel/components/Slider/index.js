@@ -37,13 +37,8 @@ export const SliderItem = styled.li`
     object-fit: cover;
   }
 
-  transition: opacity .5s;
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
+  
 `;
-
 
 const Slider = ({ children }) => (
   <Container>
@@ -61,4 +56,4 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+export default Slider;

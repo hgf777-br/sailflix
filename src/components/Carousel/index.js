@@ -1,7 +1,10 @@
 import React from 'react';
-import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
+import {
+  VideoCardGroupContainer, Title, ExtraLink, Bt,
+} from './styles';
 import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
+import videosRepository from '../../repositories/videos';
 
 function Carousel({
   ignoreFirstVideo,
@@ -10,7 +13,7 @@ function Carousel({
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
-  const videos = category.videos;
+  const { videos } = category;
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -18,11 +21,12 @@ function Carousel({
           <Title style={{ backgroundColor: categoryColor || 'red' }}>
             {categoryTitle}
           </Title>
-          {categoryExtraLink && 
+          {categoryExtraLink
+            && (
             <ExtraLink href={categoryExtraLink.url} target="_blank">
-              {categoryExtraLink.text}  
+              {categoryExtraLink.text}
             </ExtraLink>
-          }
+            )}
         </>
       )}
       <Slider>
@@ -33,6 +37,9 @@ function Carousel({
 
           return (
             <SliderItem key={video.titulo}>
+              <Bt type="button" onClick={() => { videosRepository.getOne(category.id, video.id); }}>
+                x
+              </Bt>
               <VideoCard
                 videoTitle={video.titulo}
                 videoURL={video.url}

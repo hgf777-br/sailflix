@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import useForm from '../../../hooks/useForm';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
-import videosRepository from '../../../repositories/videos.js';
-import categoriasRepository from '../../../repositories/categorias.js';
+import Modal from '../../../components/Modal';
+import videosRepository from '../../../repositories/videos';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
+  const [dadosModal, ToggleShowModal] = useState({ show: 'false', categoria: 'teste HGF' });
   const categoryTitles = categorias.map(({ titulo }) => titulo);
   const { handleChange, values } = useForm({
     titulo: '',
@@ -25,6 +27,12 @@ function CadastroVideo() {
       });
   }, []);
 
+  function onCancel() {
+    ToggleShowModal({
+      show: 'false',
+    });
+  }
+
   return (
     <PageDefault>
       <h1>Cadastro de Video</h1>
@@ -33,6 +41,13 @@ function CadastroVideo() {
         event.preventDefault();
 
         const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
+
+        if (!categoriaEscolhida && values.categoria !== '') {
+          ToggleShowModal({
+            show: 'true',
+            categoria: values.categoria,
+          });
+        }
         if (values.titulo && values.url && categoriaEscolhida) {
           videosRepository.create({
             titulo: values.titulo,
@@ -45,6 +60,11 @@ function CadastroVideo() {
         }
       }}
       >
+        <Modal
+          show={dadosModal.show}
+          categoria={dadosModal.categoria}
+          onCancel={onCancel}
+        />
         <FormField
           label="Título do Vídeo"
           name="titulo"
@@ -71,13 +91,6 @@ function CadastroVideo() {
           Cadastrar
         </Button>
       </form>
-
-      <br />
-      <br />
-
-      <Link to="/cadastro/categoria">
-        Cadastrar Categoria
-      </Link>
     </PageDefault>
   );
 }
