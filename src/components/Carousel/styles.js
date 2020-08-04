@@ -55,19 +55,17 @@ export const VideoCardGroupContainer = styled.section`
 `;
 
 export const Bt = styled.button`
-  color: #AA8888;
-  background: #AA0000;
+  color: var(--white);
+  background: #990000;
   height: 20px;
-  width: 20px;
   position: relative;
   top: 25px;
-  left: 290px;
+  left: 250px;
   z-index: 1;
   font-size: 12px;
-  font-weight: bold;
-  padding: 0;
+  padding: 0px 5px;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 3px;
   text-decoration: none;
 `;

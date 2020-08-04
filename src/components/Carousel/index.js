@@ -61,7 +61,7 @@ function Carousel({
               <Bt type="button" onClick={() => {
                 videosRepository.delVideo(category.id, video.id);
               }}>
-                X
+                apagar
               </Bt>
               <VideoCard
                 videoTitle={video.titulo}
