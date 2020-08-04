@@ -6,18 +6,17 @@ import {
 } from './styles';
 import Button from '../Button';
 
-function Modal({ show, categoria, onCancel }) {
-  const isShow = show;
-  if (isShow === 'false') {
+function Modal({ show, conteudo, onCancel, txt1, titulo }) {
+  if (show === 'false') {
     return null;
   }
   return (
     <DivModal>
       <Header>
-        <p>Nova Categoria</p>
+          <p>{titulo}</p>
       </Header>
       <Content>
-        <p>{categoria}</p>
+        <p>{conteudo}</p>
       </Content>
       <Actions>
         <Button
@@ -25,10 +24,9 @@ function Modal({ show, categoria, onCancel }) {
           as={Link}
           to={{
             pathname: '/cadastro/categoria',
-            state: { categoria },
-          }}
-        >
-          inserir
+            state: { conteudo },
+        }}>
+          {txt1}
         </Button>
         <Button type="button" onClick={onCancel}>
           cancelar

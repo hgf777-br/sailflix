@@ -11,7 +11,7 @@ import categoriasRepository from '../../../repositories/categorias';
 function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
-  const [dadosModal, ToggleShowModal] = useState({ show: 'false', categoria: 'teste HGF' });
+  const [dadosModal, ToggleShowModal] = useState({ show: 'false', categoria: '' });
   const categoryTitles = categorias.map(({ titulo }) => titulo);
   const { handleChange, values } = useForm({
     titulo: '',
@@ -62,8 +62,10 @@ function CadastroVideo() {
       >
         <Modal
           show={dadosModal.show}
-          categoria={dadosModal.categoria}
+          conteudo={dadosModal.categoria}
+          titulo='Nova Categoria'
           onCancel={onCancel}
+          txt1='inserir'
         />
         <FormField
           label="Título do Vídeo"

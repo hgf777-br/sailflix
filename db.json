@@ -165,10 +165,22 @@
       "id": 21
     },
     {
-      "titulo": "Cruzando o Cabo Horn (1929)",
-      "url": "https://www.youtube.com/watch?v=9tuTKhqWZso",
+      "titulo": "Living on a Self-Sufficient Sailboat for 10 Years",
+      "url": "https://www.youtube.com/watch?v=lk83N2u1ZmY",
       "categoriaId": 4,
       "id": 22
+    },
+    {
+      "titulo": "Nova Scotia Sailing Adventure 2017 (Part 1 - Deep Cove)",
+      "url": "https://www.youtube.com/watch?v=VRZGHwXedFM",
+      "categoriaId": 4,
+      "id": 23
+    },
+    {
+      "titulo": "Sailing adventures",
+      "url": "https://www.youtube.com/watch?v=AjZr8XK72kQ",
+      "categoriaId": 4,
+      "id": 24
     }
   ]
 }

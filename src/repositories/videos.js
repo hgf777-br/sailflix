@@ -7,7 +7,6 @@ function getOne(idCategoria, idVideo) {
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
         const resposta = await respostaDoServidor.json();
-        console.log(resposta);
         return resposta;
       }
 
@@ -33,14 +32,14 @@ function create(objetoDoVideo) {
     });
 }
 
-function delVideo(objetoDoVideo) {
-  return fetch(`${URL_VIDEOS}?_embed=videos`, {
+function delVideo(idCategoria, idVideo) {
+  return fetch(`${URL_VIDEOS}/${idVideo}`, {
     method: 'DELETE',
-    body: JSON.stringify(objetoDoVideo),
   })
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
         const resposta = await respostaDoServidor.json();
+        console.log(resposta);
         return resposta;
       }
 
