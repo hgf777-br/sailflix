@@ -25,7 +25,7 @@ function Modal({ show, conteudo, onCancel, txt1, titulo }) {
           to={{
             pathname: '/cadastro/categoria',
             state: { conteudo },
-        }}>
+          }}>
           {txt1}
         </Button>
         <Button type="button" onClick={onCancel}>

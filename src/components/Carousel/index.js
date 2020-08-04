@@ -14,13 +14,25 @@ function Carousel({
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
-  const [dadosModal, ToggleShowModal] = useState({ show: 'false', categoria: '' });
+  const [dadosModal, ToggleShowModal] = useState({ show: 'true' });
   const { videos } = category;
 
   function onCancel() {
     ToggleShowModal({
       show: 'false',
     });
+  }
+
+  function showModal() {
+    return (
+      <Modal
+      show={dadosModal.show}
+      conteudo='ventos uivantes'
+      titulo='Excluir Video'
+      onCancel={onCancel}
+      txt1='excluir'
+    />
+    );
   }
 
   return (
@@ -46,10 +58,9 @@ function Carousel({
 
           return (
             <SliderItem key={video.titulo}>
-              <Bt type="button" onClick={() => { 
-                
-                {/*videosRepository.delVideo(category.id, video.id);*/} 
-                }}>
+              <Bt type="button" onClick={() => {
+                videosRepository.delVideo(category.id, video.id);
+              }}>
                 X
               </Bt>
               <VideoCard

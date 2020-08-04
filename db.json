@@ -35,6 +35,15 @@
         "url": ""
       },
       "id": 4
+    },
+    {
+      "titulo": "Tragedias",
+      "cor": "#e0cf10",
+      "link_extra": {
+        "text": "Coisas ruins também acontecem no mar.",
+        "url": ""
+      },
+      "id": 5
     }
   ],
   "videos": [

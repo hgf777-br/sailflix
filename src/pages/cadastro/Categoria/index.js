@@ -10,7 +10,7 @@ import {
 } from './styles';
 
 function CadastroCategoria(props) {
-  const novaCategoria = props.location.state.categoria;
+  const novaCategoria = props.location.state.conteudo;
   const history = useHistory();
   const valoresIniciais = {
     nome: novaCategoria,
